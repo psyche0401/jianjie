@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>学历</title>
+    <link href="css/scroll.css" rel="stylesheet">
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="lib/jquery-2.1.0.min.js"></script>
+    <script src="data/data.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+        body {
+            font-size: 12px;
+            background: none;
+        }
+
+        .juzhong {
+            display: flex;
+            /*实现垂直居中*/
+            align-items: center;
+            /*实现水平居中*/
+            /*justify-content: center;*/
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        .rx {
+            width: 70px;
+            height: 70px;
+            background: #5270b7;
+            border-radius: 50%;
+            line-height: 70px;
+            text-align: center;
+            color: #fff;
+            background-color: #2f64b5;
+            box-shadow: inset 0px 0px 14px 5px #fffdfd;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="head juzhong">
+
+        <h3 style="color:#2b75c8">教育</h3>
+
+    </div>
+
+    <div class="container" style="border:thin solid #ccc;margin-top:2%;height:500px;background:url(img/map.jpg) no-repeat 100% 100%">
+        <div class="row" style="color:#928f8f">
+            <div class="col-lg-12 col-sm-4 juzhong" style="width:80%;height:100px;margin-top:10%">
+
+                <div style="margin:20%">
+                    <div class="rx">中专 </div>
+                    <span class="">惠州外贸学校</span>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-12 col-sm-4 juzhong" style="width:80%;height:100px;">
+
+                <div style="margin:auto">
+                    <div class="rx">大专 </div>
+                    <span class="">汕尾电大</span>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-12 col-sm-4 juzhong" style="width:80%;height:100px;">
+
+                <div style="margin-left:70%">
+                    <div class="rx">初中 </div>
+                    <span class="">汕尾市红海湾遮浪中学</span>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    $(function ()
+    {
+
+        $('.container').addClass('ckd');
+
+        function an()
+        {
+
+                $('.rx').each(function ()
+                {
+                    $(this).removeClass('two')
+
+                })
+
+                setTimeout(function ()
+                {
+                    var num = Math.round(Math.random() * 2)
+
+                    $('.rx').eq(num).addClass('two')
+                }, 1000)
+
+            timer=setTimeout(an, 4000)
+
+        }
+
+        an()
+
+
+    })
+
+</script>

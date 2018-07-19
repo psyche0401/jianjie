@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/scroll.css" rel="stylesheet">
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="lib/jquery-2.1.0.min.js"></script>
+    <script src="data/data.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+        body {
+            font-size: 12px;
+            background: none;
+        }
+
+        .juzhong {
+            display: flex;
+            /*实现垂直居中*/
+            align-items: center;
+            /*实现水平居中*/
+            /*justify-content: center;*/
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        .base_info {
+            width: 100%;
+            height: 50px;
+            font-size: 14px;
+            color: #3b558b;
+            ActiveBorder: thin solid #ccc;
+            /*background:yellow;*/
+            /*padding-left:10%*/
+        }
+
+        ._box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        .left_box {
+            width: 48%;
+            height: 100%;
+            position: relative;
+            /*background:red*/
+        }
+
+        .right_box {
+            width: 48%;
+            height: 100%;
+            position: relative;
+        }
+
+        .percentage_box {
+            width: 100%;
+            height: 20px;
+            background: #ededed;
+            color: #cbd2e0;
+            margin-bottom: 3%;
+            line-height: 20px;
+        }
+
+            .percentage_box span {
+                float: right;
+                color: #9f9b9b;
+            }
+
+        .work_box {
+            width: 100%;
+            height: 200px;
+            /*background: #ededed;*/
+        }
+
+            .work_box i {
+                margin-right: 10px;
+            }
+
+        .border_bottom {
+            border-bottom: thin solid #ccc;
+            position: relative;
+        }
+
+            .border_bottom .block {
+                width: 30px;
+                height: 1px;
+                background: #3b558b;
+                position: absolute;
+                bottom: 0;
+            }
+
+        ._date {
+            float: right;
+        }
+
+        .msg {
+            color: #a59f9f;
+        }
+
+        .img_box {
+            width: 30%;
+            height: 200px;
+            border: thin solid #ccc;
+            background: #ccc;
+        }
+
+        img:hover {
+            background: '#ccc' !important;
+            color: #3B5998 !important;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+            cursor: pointer;
+        }
+
+        ul {
+            width: 100%;
+            float: right;
+        }
+
+        ._box ul li {
+            background-color: #3b5997;
+            padding: 8px 15px;
+            float: left;
+            list-style: none;
+            color: #fff;
+        }
+
+
+            ._box ul li:hover {
+                background: #5379c9;
+                color: #fff;
+            }
+
+
+        /*img {
+            width:100%;
+            height:30px;
+        }*/
+
+
+
+        .open {
+            background: #4077e7 !important;
+            color:#fff;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div  class="head juzhong">
+
+        <h3 style="color:#2b75c8">  给我发送邮件</h3>
+
+    </div>
+    <div class="container">
+
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function mailsome1(){
+who=prompt("Enter recipient's email address: ","antispammer@earthling.net");
+what=prompt("Enter the subject: ","none");
+if (confirm("Are you sure you want to mail "+who+" with the subject of "+what+"?")==true){
+parent.location.href='mailto:'+who+'?subject='+what+'';
+  }
+}
+// End -->
+</SCRIPT>
+<a href='javascript:mailsome1()'>E-Mail Someone!</a>
+<FORM>
+    <input type=button value="E-Mail Someone!" onClick="mailsome1()">
+</FORM>
+
+<script>
+
+
+
+
+
+    $(function ()
+    {
+
+
+
+
+
+
+
+
+
+    })
+
+</script>

@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/scroll.css" rel="stylesheet">
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="lib/jquery-2.1.0.min.js"></script>
+
+    <style>
+        body {
+            font-size: 12px;
+        }
+
+        .juzhong {
+            display: flex;
+            /*实现垂直居中*/
+            align-items: center;
+            /*实现水平居中*/
+            /*justify-content: center;*/
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        .base_info {
+            width: 100%;
+            height: 50px;
+            font-size: 14px;
+            color: #3b558b;
+            ActiveBorder: thin solid #ccc;
+            /*background:yellow;*/
+            /*padding-left:10%*/
+        }
+
+
+        ._box {
+            width: 100%;
+            /*height: 100%;*/
+            position: relative;
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        .left_box {
+            width: 48%;
+            /*height: 100%;*/
+            position: relative;
+            /*background:red*/
+        }
+
+        .right_box {
+            width: 48%;
+            /*height: 100%;*/
+            position: relative;
+        }
+
+        .percentage_box {
+            width: 100%;
+            height: 20px;
+            background: #ededed;
+            color: #cbd2e0;
+            margin-bottom: 3%;
+            line-height: 20px;
+        }
+
+            .percentage_box span {
+                float: right;
+                color: #9f9b9b;
+            }
+
+        .work_box {
+            width: 100%;
+            height: 150px;
+            /*background: #ededed;*/
+        }
+
+            .work_box i {
+                margin-right:10px;
+            }
+
+        .border_bottom {
+            border-bottom: thin solid #ccc;
+            position: relative;
+        }
+
+            .border_bottom .block {
+                width: 30px;
+                height: 1px;
+                background: #3b558b;
+                position: absolute;
+                bottom: 0;
+            }
+
+        ._date {
+            float: right;
+        }
+
+        .msg  {
+            
+            color:#a59f9f
+        }
+    </style>
+</head>
+<body>
+
+    <div class="head juzhong" style="border-bottom:thin solid #ccc">
+
+        <h3 style="color:#2b75c8"> 技能树及工作历程</h3>
+
+    </div>
+    <div class="_box">
+
+
+        <div class="left_box">
+
+            <div class="base_info juzhong border_bottom">
+                设计
+                <div class="block"></div>
+
+            </div>
+
+            <div class="bs" style="width:100%;background:#f3f3f3;padding-top:5%">
+
+                <div class="percentage_box">
+
+                    <span> 80%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:90%; ">
+
+                        <div style="width:70%;height:100%;background:#3b558b">
+
+                            photoshop
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="percentage_box">
+
+                    <span> 60%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:60%; ">
+
+                        <div style="width:50%;background:#3b558b">
+
+                            AI
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="percentage_box">
+
+                    <span> 70%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:70%; ">
+
+                        <div style="width:60%;height:100%;background:#3b558b">
+
+                            CDR
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- 前端开发工具 -->
+            <div class="base_info juzhong border_bottom">
+                前端开发工具
+
+                <div class="block"></div>
+
+            </div>
+
+            <div style="width:100%;background:#f3f3f3;padding-top:5%">
+
+                <div class="percentage_box">
+
+                    <span> 85%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:85%; ">
+
+                        <div style="width:75%;height:100%;background:#3b558b">
+
+                            Jquery
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="percentage_box">
+
+                    <span> 70%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:70%; ">
+
+                        <div style="width:60%;height:100%;background:#3b558b">
+
+                            Bootstrap
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <!-- 后端语言 -->
+            <div class="base_info juzhong border_bottom">后端语言<div class="block"></div></div>
+            <div style="width:100%;background:#f3f3f3;padding-top:5%">
+
+                <div class="percentage_box">
+
+                    <span> 60%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:60%; ">
+
+                        <div style="width:50%;height:100%;background:#3b558b">
+
+                            PHP
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 办公软件 -->
+            <div class="base_info juzhong border_bottom">办公软件<div class="block"></div></div>
+
+            <div style="width:100%;background:#f3f3f3;padding-top:5%">
+
+                <div class="percentage_box">
+
+                    <span> 68%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:68%; ">
+
+                        <div style="width:50%;height:100%;background:#3b558b">
+
+                            Ms Excel
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="percentage_box">
+
+                    <span> 68%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:68%; ">
+
+                        <div style="width:50%;height:100%;background:#3b558b">
+
+                            Ms Word
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="percentage_box">
+
+                    <span> 68%</span>
+                    <div class="percentage_box" style="background:#5e76a8;width:68%; ">
+
+                        <div style="width:50%;height:100%;background:#3b558b">
+
+                            Powerpoint
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right_box">
+            <div class="base_info juzhong border_bottom">工作经历<div class="block"></div></div>
+
+
+            <div class="work_box">
+
+                <div class="base_info juzhong " style="border-bottom:thin solid #3b5997">
+
+                    <div style="width:70%;height:50%;color:black;">
+                        前端开发
+                    </div>
+
+                    <div style="width:70%;height:50%">
+
+                       <i class="fa  fa-calendar" ></i>2016-2018
+                    </div>
+
+                </div>
+
+                <div style="width:100%;height:100%; color:#3b5997">
+
+                   <span ><i class="fa fa-briefcase"></i>广州致宇信息科技有限公司</span> 
+
+                    <div class="msg">
+                        负责web软件项目前端开发 、功能测试，及ui设计等工作
+                    </div>
+
+            
+                </div>
+
+            </div>
+
+            <div class="work_box">
+
+                <div class="base_info juzhong " style="border-bottom:thin solid #3b5997">
+
+                    <div style="width:70%;height:50%;color:black;">
+                        平面设计
+                    </div>
+
+                    <div style="width:70%;height:50%">
+
+                        <i class="fa  fa-calendar"></i>2015-2016
+                    </div>
+
+                </div>
+
+                <div style="width:100%;height:100%; color:#3b5997">
+
+                    <span><i class="fa fa-briefcase"></i>汕尾市航宇信息科技有限公司</span>
+
+                    <div class="msg">
+                        负责产品主图及详情设计，banner图设计等设计工作
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="work_box">
+
+                <div class="base_info juzhong " style="border-bottom:thin solid #3b5997">
+
+                    <div style="width:70%;height:50%;color:black;">
+                        系统管理员
+                    </div>
+
+                    <div style="width:70%;height:50%">
+
+                        <i class="fa  fa-calendar"></i>2012-2015
+                    </div>
+
+                </div>
+
+                <div style="width:100%;height:100%; color:#3b5997!important">
+
+                    <span><i class="fa fa-briefcase"></i>深圳市祥星纸品有限公司</span>
+
+                    <div class="msg">
+                        从事电脑故障检修，打印机维护，监控设备维护，网络管理 erp系统维护及电话交换机设置等维护工作
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

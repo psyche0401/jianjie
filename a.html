@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/scroll.css" rel="stylesheet">
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="lib/jquery-2.1.0.min.js"></script>
+    <link href="css/main.css" rel="stylesheet" />
+    <style>
+
+        body {
+            font-size:14px;
+            background:none;
+        }
+        .juzhong {
+            display: flex;
+            /*实现垂直居中*/
+            align-items: center;
+            /*实现水平居中*/
+            /*justify-content: center;*/
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        .base_info {
+            width:100%;
+            height:50%;
+        }
+
+        td {
+            height:40px;
+            border-bottom:thin solid #ccc
+        }
+
+           table{
+               border-collapse:collapse;
+               width:100%;
+               border:thin solid #ccc
+}
+        td:nth-child(odd) {
+        
+            color:#3b5997;
+            text-align:center
+        }
+
+        td i {
+            margin-right:5px;
+        }
+
+        .label {
+            
+            width:10px;height:50px;background:#3b5997;position:absolute;right:-9px;top:100px;color:#fff
+        
+        }
+
+    </style>
+</head>
+<body>
+
+    <div style="width:100%;height:500px;position:relative">
+
+
+        <div style="width:100%;height:50px;border-bottom:thin solid #ccc; position:relative" class="juzhong">
+
+            <h3 style="color:#2b75c8"> 关于我</h3>
+            <!--<div style="width:30px;height:1px;background:#3b558b;position:absolute;bottom:0"></div>-->
+
+        </div>
+        <div style="width:100%;height:70%; display:inline-flex;margin-top:10%;">
+
+            <div style="width:70%;height:100%;margin:auto;">
+
+
+                <div class="base_info" style="position:relative">
+
+
+                    <!--<div style="width:100%;height:30px;border-bottom:thin solid #ccc">
+
+                    <h3>基本信息</h3>
+                    </div>-->
+
+
+                    <div class="label">
+
+                    </div>
+
+                    <table>
+
+                        <tr>
+                            <td ><i class="fa fa-user"></i> 姓名</td>
+                            <td>安世钦</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa fa-calendar"></i>出生日期</td>
+                            <td>1988.06</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i>地址</td>
+                            <td>广东省汕尾市</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa fa-envelope"></i>邮箱</td>
+                            <td>asq3456922@.com</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone"></i>手机</td>
+                            <td>13534149323</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa fa-globe"></i>网址</td>
+                            <td>www.......com</td>
+                        </tr>
+
+                        </table>
+
+                    </div>
+
+
+
+            </div>
+
+            <!--<div style="width:50%;height:100%;">-->
+
+
+                <!--<img src="../img/about_3.png" style="width:100%;height:100%" />-->
+
+
+            <!--</div>-->
+
+
+
+            </div>
+
+        </div>
+
+
+</body>
+</html>
+
+<script>
+
+
+    $(function ()
+    {
+
+
+        $('.base_info').addClass('ckd')
+        //$("body").on('mouseenter', 'table', function ()
+        //{
+        //    $('table').each(function ()
+        //    {
+
+        //        $(this).removeClass('ckd');
+
+        //    })
+
+
+            
+        //});
+
+    })
+
+    </script>
