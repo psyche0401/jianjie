@@ -10,6 +10,21 @@
     <script src="data/data.js"></script>
     <link href="css/main.css" rel="stylesheet">
     <style>
+
+               @media screen and (max-width: 426px) {
+
+
+                   .xx{
+
+                       display:block!important;
+                       height:100%!important;
+                   }
+
+                .img_box {
+                    width:100%!important;
+                }
+        }
+
         body {
             font-size: 12px;
             background: none;
@@ -109,7 +124,7 @@
         }
 
         img:hover {
-            background: '#ccc' !important;
+            background: #ccc !important;
             color: #3B5998 !important;
             transition-duration: 0.3s;
             transition-timing-function: linear;
@@ -158,7 +173,6 @@
 
     </div>
     <div class="_box">
-
 
         <ul>
 
@@ -258,7 +272,7 @@
         function creatImg(imgData)
         {
             // 生成动态图例列表
-            $(imgData).each(function (i, oj)
+            $(imgData).each(function (i, oj,num)
             {
 
                 if (i === 0 || i % 3 == 0)
@@ -301,15 +315,29 @@
         $('body').on('click', 'img', function (i, ob)
         {
             var an = $(this).attr('src');
+
+
+            var arr;
+
+            if ($(window).width() < 424)
+            {
+
+                arr = ['80%', '30%']
+            }
+            else
+            {
+                arr = ['630px', '360px']
+            }
+
             parent.layer.open({
                 type: 1,
                 title: false,
-                area: ['630px', '360px'],
+                area: arr,
                 shade: 0.3,
                 closeBtn: 0,
                 shadeClose: true,
                 scrollbar: true,
-                content: '<img src="' + $(this).attr('src') + ' " class="img_show">'
+                content: '<img src="' + $(this).attr('src') + ' " class="" style="height:100%;width:100%">'
             });
         })
 

@@ -11,6 +11,50 @@
     <script src="lib/jquery-2.1.0.min.js"></script>
     <script src="lib/layer/layer.js"></script>
     <style>
+
+        @media screen and (max-width: 767px) {
+
+            /*body{
+                overflow:hidden;
+            }*/
+
+            .box {
+                width:100%;
+                height:100vh;
+                position:relative
+            }
+
+            #ccc {
+                width:100%!important;
+                height:100vh!important
+                }
+            .a_box {
+                width:20%!important;
+            }
+
+            #content {
+                width:80%!important;
+                -webkit-overflow-scrolling: touch;
+                overflow-y: scroll!important
+
+            }
+            .container {
+
+                width:100%;
+                padding-left:0!important;
+                padding-right:0!important;
+            }
+            .row {
+               margin:0
+            }
+            .col-lg-3 {
+                padding:0;
+            }
+
+
+}
+
+
         body {
             margin: 0;
             padding: 0;
@@ -21,8 +65,8 @@
         }*/
 
         .img_show {
-            width: 630px;
-            height: 360px;
+            /*width: 630px;
+            height: 360px;*/
         }
 
         img {
@@ -35,10 +79,10 @@
 <body>
 
     <div class="container">
-
+ 
         <div class="row">
 
-            <div class="box col-lg-3">
+            <div class="box col-lg-3 ">
 
                 <!-- 菜单导航 -->
                 <div class="a_box">
@@ -109,78 +153,10 @@
 
                 <!-- 内容展示位 -->
 
-                <div style="width:65%;height:100%;background:#f3f3f3;overflow:hidden" id="content">
+                <div style="width:65%;height:100%;background:#f3f3f3;-webkit-overflow-scrolling:touch;overflow-y:hidden;" id="content">
 
 
                     <iframe src="a.html" style="overflow:hidden;border:none;width:100%;height:100%" id="content_iframe"></iframe>
-
-
-                </div>
-
-
-                <!-- 个人信息展示 -->
-
-
-                <div style="width:25%;height:100%;background:#3b5997; " class="col-sm-12 col-lg-12 col-xs-12">
-
-                    <div style="width:90%;height:50%;text-align:center;margin:auto;margin-top:-10%">
-
-
-                        <img src="img/dever.png" style="border-radius:50%;height:40%;margin:20% auto;display:block;margin-bottom:10%;">
-
-                        <span style="color:#829bce;font-size:20px;font-family:'等线'; display:block;margin-bottom:10px;">AN SHIQIN</span>
-                        <span style="color:#829bce;font-size:14px;font-family:'等线'; display:block;margin-bottom:10px;">网页开发 & 平面设计</span>
-
-                        <span style="color:#829bce;font-size:14px;font-family:'等线';margin-bottom:10px;"><i class="fa fa-map-marker"></i>  广东省汕尾市</span>
-
-
-                    </div>
-
-                    <div style="width:80%;height:20%;text-align:center;margin:auto;border-top:thin solid #839cce;border-bottom:thin solid #839cce;padding:3%">
-
-
-                        <span style="color:#829bce;font-size:12px;font-family:'等线';margin-bottom:10px;">努力不一定成功，但不努力一定不会成功...</span>
-
-
-                    </div>
-
-                    <div style="width:80%;height:20%;text-align:center;margin:auto;padding:3%">
-
-
-                        <span style="color:#829bce;font-size:14px;font-family:'等线';margin-bottom:30px;">您好.世界</span>
-
-                        <div style="width:100%;height:40px;display:inline-flex;justify-content:space-between;margin-top:10px">
-
-
-                            <div class="div_a">
-
-
-                                <span class="fa fa-weixin"></span>
-
-                            </div>
-
-                            <div class="div_a">
-                                <span class="fa fa-weibo"></span>
-
-                            </div>
-
-                            <div class="div_a">
-
-                                <span class="fa fa-linkedin"></span>
-                            </div>
-
-                            <div class="div_a">
-                                <span class="fa fa fa-dribbble"></span>
-                            </div>
-                            <div class="div_a">
-                                <span class="fa fa-foursquare"></span>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
 
 
                 </div>
@@ -194,6 +170,115 @@
 
 </body>
 </html>
+<script>
+  
+
+
+    //动态生成个人信息列表
+    
+    var html='<div style="width:25%;height:100%;background:#3b5997; " class="col-sm-12 col-lg-12 col-xs-12 dd" id="ccc">'
+
+               +    ' <div style="width:90%;height:50%;text-align:center;margin:auto;margin-top:-10%">'
+
+
+                 +       '<img src="img/dever.png" style="border-radius:50%;height:40%;margin:20% auto;display:block;margin-bottom:10%;">'
+
+                      +  '<span class="infoText">AN SHIQIN</span>'
+                      +  '<span class="infoText" style="font-size:14px">网页开发 & 平面设计</span>'
+
+                       + '<span class="infoText" style="font-size:14px"><i class="fa fa-map-marker"></i>  广东省汕尾市'
+                       +'</span>'
+
+
+                  + ' </div>'
+
+                   +' <div style="width:80%;height:20%;text-align:center;margin:auto;border-top:thin solid #839cce;border-bottom:thin solid #839cce;padding:3%">'
+
+
+    + '<span class="infoText" style="font-size:1em">努力不一定成功，但不努力一定不会成功...</span>'
+
+
+                  + ' </div>'
+
+                   +' <div style="width:80%;height:20%;text-align:center;margin:auto;padding:3%">'
+
+
+    +'<span class="infoText" style="font-size:1em">您好.世界</span>'
+
+                       + '<div style="width:100%;height:40px;display:inline-flex;justify-content:space-between;margin-top:10px">'
+
+
+                          + ' <div class="div_a">'
+
+                                +'<span class="fa fa-weixin"></span>'
+
+                            +'</div>'
+
+                           +' <div class="div_a">'
+                                +'<span class="fa fa-weibo"></span>'
+
+                          + ' </div>'
+
+                            +'<div class="div_a">'
+
+                               + '<span class="fa fa-linkedin"></span>'
+                           + '</div>'
+
+                            +'<div class="div_a">'
+                                +'<span class="fa fa fa-dribbble"></span>'
+                            +'</div>'
+                            +'<div class="div_a">'
+                                +'<span class="fa fa-foursquare"></span>'
+                            +'</div>'
+
+
+                        +'</div>'
+
+
+                    +'</div>'
+
+
+                + '</div>'
+
+
+
+    //窗口监听事件
+    $(window).resize(function ()
+    {
+
+        $('.dd').remove()
+
+        if ($('body').width() < 768)
+        {
+
+            //$('#ccc').css('height','100vh!important')
+            $('.row').before(html)
+
+        }
+        else
+        {
+            $('.box').append(html)
+        }
+    });
+
+
+
+    //动态生成
+    if ($('body').width() < 768)
+    {
+
+        $('.row').before(html)
+
+    }
+    else
+    {
+        $('.box').append(html)
+    }
+
+              
+
+
+    </script>
 
 <script>
     $(function ()
@@ -216,6 +301,9 @@
             setTimeout(function () { $('#content').addClass('ckd'); }, 100)
 
         })
+
+
+
 
     })
 </script>
