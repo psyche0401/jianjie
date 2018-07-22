@@ -10,6 +10,16 @@
     <link href="css/main.css" rel="stylesheet" />
     <style>
 
+
+           @media screen and (max-width: 426px) {
+
+            .info_box {
+                width:100%!important
+            }
+
+
+}
+
         body {
             font-size:14px;
             background:none;
@@ -42,7 +52,8 @@
         td:nth-child(odd) {
         
             color:#3b5997;
-            text-align:center
+            /*text-align:center;*/
+            text-indent:10px
         }
 
         td i {
@@ -53,6 +64,11 @@
             
             width:10px;height:50px;background:#3b5997;position:absolute;right:-9px;top:100px;color:#fff
         
+        }
+
+        .info_box {
+        
+            width:70%;height:100%;margin:auto;
         }
 
     </style>
@@ -70,7 +86,7 @@
         </div>
         <div style="width:100%;height:70%; display:inline-flex;margin-top:10%;">
 
-            <div style="width:70%;height:100%;margin:auto;">
+            <div style="" class="info_box">
 
 
                 <div class="base_info" style="position:relative">
@@ -98,8 +114,8 @@
                             <td>1988.06</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-map-marker"></i>地址</td>
-                            <td>广东省汕尾市</td>
+                            <td><i class="fa fa-map-marker"></i>现居</td>
+                            <td>广东省深圳市罗湖区</td>
                         </tr>
 
                         <tr>
@@ -113,7 +129,7 @@
 
                         <tr>
                             <td><i class="fa fa-globe"></i>网址</td>
-                            <td>www.......com</td>
+                            <td></td>
                         </tr>
 
                         </table>
@@ -150,18 +166,6 @@
 
 
         $('.base_info').addClass('ckd')
-        //$("body").on('mouseenter', 'table', function ()
-        //{
-        //    $('table').each(function ()
-        //    {
-
-        //        $(this).removeClass('ckd');
-
-        //    })
-
-
-            
-        //});
 
     })
 

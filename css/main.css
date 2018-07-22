@@ -84,12 +84,23 @@
     transition-timing-function: linear;
 }
 
-.div_a:hover, li:hover {
+/*.div_a:hover, li:hover {
     background: #fff;
     color: #3B5998;
     cursor: pointer;
+}*/
+
+li:hover, .div_a:hover {
+    cursor:pointer;
+    background: #fff !important;
+    color: #3B5998 !important;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
 }
 
+.bgclock {
+    background:#fff;
+}
 
 .tab_ul li i {
     font-size: 20px;
@@ -157,12 +168,7 @@ a {
     transition: all 0.3s;
 }
 
-li:hover, .div_a:hover {
-    background: #ccc !important;
-    color: #3B5998 !important;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-}
+
 
 .head {
     width: 100%;
